@@ -1,0 +1,105 @@
+
+body {
+    background-color: #fff1fc;
+    color:blue;
+   font-family: "redaction-20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    padding-inline: 2em;
+    padding-block: 1.5em;
+    font-size: 14px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    gap: 1em;
+    position: relative;
+}
+
+sidebar {
+    flex-grow: 0;
+    border: blue 1px solid;
+    padding-inline: 1.4em;
+    position: sticky;
+    top: 2em;
+}
+
+main {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: blue 1px solid;
+    padding-inline: 1.4em;
+    max-width: 70vw;
+}
+b {
+    font-family: "redaction-70", sans-serif;
+    font-weight: 700;
+    font-style: bold;
+}
+.big-pixelated {
+     font-family: "redaction-70", sans-serif;
+     text-transform: uppercase;
+     text-align: center;
+}
+i {
+    font-family: "redaction-20", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+h1, h2, h3, h4 {
+    font-family: "redaction-70", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+h2 {
+    border-bottom: blue dashed 1pt;
+}
+.indent {
+    padding-left: 1em;
+}
+.indent-2 {
+    padding-left: 0.8em;
+}
+
+ button {
+    background: none;
+    border: none;
+     color: blue;
+     font-family: "redaction-20", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    cursor: pointer;
+
+ }
+ button:hover {
+    background: blue;
+    color: #fff1fc;
+ }
+
+ button:focus {
+    background: blue;
+    color: #fff1fc;
+    border: yellow 1px solid;
+
+ }
+
+ .active-button {
+    background-color: blue;
+    color: #fff1fc;
+ }
+
+ .panel {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 1.4em;
+ }
+
+ .active {
+    display: flex;
+ }
