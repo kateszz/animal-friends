@@ -18,6 +18,39 @@ body {
     position: relative;
 }
 
+@media (max-width: 600px) {
+    body {
+        padding-inline: 0.2em;
+        padding-block: 1em;
+    }
+    .wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    main {
+        max-width: 90vw;
+        z-index: 2;
+        background-color: #fff1fc;
+    }
+    p {
+      width: 95;
+      
+    }
+    .panel > p, h3 {
+        width: 100%;
+    }
+    .panel > div > img {
+        width: 30vw;
+    }
+    img {
+        max-width: 80vw;
+    }
+    sidebar {
+        z-index: 1;
+    }
+
+}
+
 sidebar {
     flex-grow: 0;
     border: blue 1px solid;
