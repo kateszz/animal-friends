@@ -1,0 +1,56 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>THANK YOU FOR YOUR DONATION</title>
+         <link rel="stylesheet" href="https://use.typekit.net/jgc4qon.css">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div style="display: flex; flex-direction:column; align-items: center; justify-content: center; padding-block: 1em;">
+            <h2 style="text-align: center;">THANK YOU FOR DONATING TO THE ANIMAL FRIENDS PROJECT OF THE CIA</h2>
+           <div class="img-slot" style="display: flex; flex-direction: column; align-items: center; justify-content: center;"><img class="addedImg" width="40%"></div>
+            <p>donation of 20 $ , 2026.04.16</p>
+            <a href="index.html" style="color: blue; margin-top: 16px;">BACK TO HOME</a>
+        </div>
+        <script>
+          
+            const imgAdded = document.querySelector('.addedImg');
+          
+            function randomIntFromInterval(min, max) { 
+  return Math.floor(Math.random() * (max - min + 1) + min);
+}
+
+const rndInt = randomIntFromInterval(0, 22);
+console.log(rndInt);
+            const imgSources = [
+                "birdmapper1.png",
+                "birdmapper2.png",
+                "birdmapper3.png",
+                "birdmapper4.png",
+                "crow1.png",
+                "crow2.png",
+                "crow3.png",
+                "fish1.png",
+                "fish2.png",
+                "fish3.png",
+                "fish4.png",
+                "fish7.png",
+                "fish8.png",
+                "insect1.png",
+                "insect2.png",
+                "otter1.png",
+                "otter2.png",
+                "pet1.png",
+                "pet2.png",
+                "pigeon1.png",
+                "pigeon2.png",
+                "pigeon3.png",
+                "pigeon4.png",
+                "pigeon5.png"
+            ];
+            imgAdded.src = imgSources[rndInt];
+        </script>
+    </body>
+    </html>
